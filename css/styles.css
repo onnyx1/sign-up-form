@@ -167,6 +167,8 @@ img {
     display: none;
   }
 
+
+
   h1 {
     display: none;
   }
@@ -174,6 +176,8 @@ img {
   .small {
     display: block;
     font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
   }
 
@@ -221,6 +225,7 @@ img {
     font-size: 0.9rem;
     font-weight: bold;
     margin-top: 0;
+    margin-bottom: 1rem;
   }
 
   footer {
