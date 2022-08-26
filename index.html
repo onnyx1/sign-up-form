@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,87 +13,98 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
 </head>
+<body>
+  
 <div class="documentContainer">
-  <div class = "background-container">
-  
-    <div class = "row logo-section">
+  <div class="background-container">
+
+    <div class="row logo-section">
       <img src="./images/odin-lined.png" alt="">
-      <span class = "odin">ODIN</span>
+      <span class="odin">ODIN</span>
     </div>
-  
-  </div>
-  
-  
-    <div class = "column form-container">
-  
-  <header>
-    
-    
-    <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
-    <h1 class = "small">Sign up <em>now</em> to get started.</h1>
-    <p>You <em>know</em> you want to.</p>
-  </header>
 
-    <div class = "column form-section">
-    <p class = "form-title">Let's do this!</p>
+    <div class="attribution">
+      <p>Photo by <a
+          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
+          West</a> on <a
+          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+    </div>
 
-  <form action="" method="">
-  <div class="row gap">
-    <p>
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" />
-    </p>
-  
-    <p>
-      <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" />
-    </p>
   </div>
-  
-  <div class="row gap">
-  
-  
-    <p>
-      <label for="email">Email</label>
-      <input type="email" id="email" />
-    </p>
-  
-  
-  
-    <p>
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" />
-    </p>
-  </div>
-  
-  
-  <div class="row gap">
-  
-  
-    <p>
-      <label for="password">Password</label>
-      <input type="password" id="password" />
-    </p>
-  
-  
-    <p>
-      <label for="confirmPassword">Confirm Password</label>
-      <input type="password" id="confirmPassword" />
-    </p>
-  </div>
-  
-  </div>
-  
-  <footer>
-  
-    <button type="submit">Create Account</button>
-  
-    <p>Already have an account? <span class = "log-in">Log in</span></p>
-  </footer>
-  </div>
+
+
+  <div class="column form-container">
+
+    <header>
+
+
+      <h1>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams. Sign up <em>now</em> to get started.</h1>
+      <h1 class="small">Sign up <em>now</em> to get started.</h1>
+      <p>You <em>know</em> you want to.</p>
+    </header>
+
+    <div class="column form-section">
+      <p class="form-title">Let's do this!</p>
+
+      <form action="" method="get">
+        <div class="row gap">
+          <p>
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" id="firstName" required name="first-name"  />
+          </p>
+
+          <p>
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName" required name="last-name" />
+          </p>
+        </div>
+
+        <div class="row gap">
+
+          <p>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" required name="email" />
+          </p>
+
+
+
+          <p>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" required name="phone-number" pattern="[0-9]{10}" />
+          </p>
+        </div>
+
+
+        <div class="row gap">
+
+
+          <p>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" required name="password" onhange="check()" />
+            <label id="errorLabel" hidden></label>
+          </p>
+
+
+          <p>
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input type="password" id="confirmPassword" required name="confirm-password" onChange="check()" />
+          </p>
+        </div>
+
+
+    <footer>
+
+      <button type="submit">Create Account</button>
+
+      <p>Already have an account? <span class="log-in">Log in</span></p>
+    </footer>
+
 
 
   </form>
@@ -103,4 +115,3 @@
 </body>
 
 </html>
-

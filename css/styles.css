@@ -16,6 +16,22 @@ input {
   border-radius: 6px;
 }
 
+.error {
+  outline: none;
+  border: 1px solid red;
+}
+
+#errorLabel {
+  color: red;
+  font-size: 0.7rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 3px 3px 7px rgb(211, 208, 208);
+}
+
 body {
   font-family: sans-serif;
   background-color: #f9fafb;
@@ -108,7 +124,10 @@ header {
 }
 
 label {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+}
+#errorLabel::before {
+  content: "* Passwords do not match";
 }
 
 .logo-section {
@@ -116,9 +135,23 @@ label {
   justify-content: center;
   align-items: center;
   width: 100%;
-  top: 18%;
+  top: 22.3%;
   background-color: rgb(0, 0, 0, 0.4);
   padding: 0.5rem;
+}
+
+a {
+  color: white;
+}
+
+.attribution {
+  display: flex;
+  width: 100%;
+  opacity: 0.85;
+  position: absolute;
+  color: white;
+  bottom: 0.5%;
+  justify-content: center;
 }
 
 .odin {
@@ -167,8 +200,6 @@ img {
     display: none;
   }
 
-
-
   h1 {
     display: none;
   }
@@ -178,7 +209,6 @@ img {
     font-size: 1.4rem;
     margin-left: 1rem;
     margin-right: 1rem;
-
   }
 
   .row.gap {
