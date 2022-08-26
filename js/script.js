@@ -6,6 +6,7 @@ function check() {
   if (password.value === confirm.value) {
     password.classList.remove("error");
     confirm.classList.remove("error");
+    errorLabel.hidden = true;
     confirm.setCustomValidity("");
   } else {
     password.classList.add("error");
